@@ -1,34 +1,65 @@
-Case Study 169: Stock Price Correlation Analysis Using Python
-Introduction
+📊 Stock Price Correlation Analysis (Python + NumPy)
 ---
-This case study focuses on analyzing the relationship between different stock prices using Python. In financial markets, some stocks move together due to similar industry trends or economic factors. Identifying such correlations helps investors in risk management and portfolio diversification.
+📌 Overview
+
+This project analyzes stock price movements to identify how different stocks move together over time.
+It calculates correlation using NumPy, applies OOP concepts, and visualizes relationships using charts.
 ---
-Problem Statement
+🚀 Features
 
-Manual analysis of stock price movements is inefficient and error-prone. Therefore, the objective of this case study is to design a Python-based system that automatically processes historical stock data, calculates correlations between stocks, and visually represents these relationships.
+Load and validate historical stock prices
+
+Calculate stock correlations using NumPy
+
+Identify strongly correlated stock pairs
+
+Visualize data with:
+
+📉 Dual line charts
+
+🔥 Correlation heatmap
+
+Save results in JSON format
+
+🧠 Concepts Used
+
+Python OOP (StockPair class)
+
+NumPy (np.corrcoef)
+
+Decorators (input validation)
+
+Lambda functions
+
+List comprehensions
+
+Data visualization (Matplotlib, Seaborn)
 ---
-Methodology and Technology Used
-
-The solution is implemented using Python. Pandas is used for data loading and cleaning, NumPy is used to calculate correlation values, and Matplotlib and Seaborn are used for visualization. The Pearson Correlation Coefficient algorithm is applied to measure the strength of relationships between stock prices.
+📂 Project Structure
+├── stock_correlation_main.py
+├── stock_pair_class.py
+├── stock_utils.py
+├── stock_prices.csv
+├── correlation_matrix.json
 ---
-Implementation Overview
-
-Stock price data is loaded from a CSV file and validated for missing values. Correlation values are computed for all stock pairs, and strongly correlated pairs are filtered using a predefined threshold. The results are visualized using a correlation heatmap, making interpretation easy.
+📊 Sample Data (stock_prices.csv)
+Date,AAPL,MSFT,GOOGL
+2024-01-01,185,370,140
+2024-01-02,187,372,142
+2024-01-03,186,369,141
 ---
-Results and Conclusion
-
-The analysis successfully identified strongly correlated stock pairs, especially within similar sectors. This case study demonstrates how Python can be effectively used for financial data analysis using automation, object-oriented design, and data visualization. The system is scalable and can be enhanced for real-time analysis in the future.
+▶️ How to Run
+pip install pandas numpy matplotlib seaborn
+python stock_correlation_main.py
 ---
-References
+📈 Output
 
-Python Software Foundation – https://www.python.org
+Correlation heatmap of all stocks
 
-Pandas Documentation – https://pandas.pydata.org
+Line chart comparison of highly correlated stock pairs
 
-NumPy Documentation – https://numpy.org
+Saved correlation matrix in JSON format
 
-Matplotlib Documentation – https://matplotlib.org
+🏁 Conclusion
 
-Seaborn Documentation – https://seaborn.pydata.org
-
-Investopedia – Pearson Correlation Coefficient
+This project demonstrates real-world financial data analysis using NumPy-based correlation, clean OOP design, and meaningful visualizations.
